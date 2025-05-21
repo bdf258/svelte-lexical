@@ -1,6 +1,7 @@
-<script>
-  import RichTextComposer from './../RichTextComposer.svelte';
+<script lang="ts">
+  import { LexicalEditor } from 'lexical';
   import '../global.css';
+
 </script>
 
 <main>
@@ -12,8 +13,12 @@
     demo built using
     <a href="https://kit.svelte.dev">SvelteKit</a>
   </p>
+  <div>
+    <button style="margin-bottom: 1em; background: black; color: white;">Click me</button>
+  </div>
+    <div>
   <div style="text-align: left;">
-    <RichTextComposer />
+    <LexicalEditor />
   </div>
 </main>
 
